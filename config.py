@@ -1,17 +1,17 @@
 import os 
 import sys
 
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
-HEROKU_APP_NAME = os.getenv('HEROKU_APP_NAME')
+BOT_TOKEN = os.environ.get('5330673710:AAGYvJ9YfgCS-7fBxnptlGO9fFqFRgVnHH8')
+HEROKU_APP_NAME = os.getenv('audiobookbott')
 
 # webhook settings
 WEBHOOK_HOST = f'https://{HEROKU_APP_NAME}.herokuapp.com'
 WEBHOOK_PATH = f'/webhook/{BOT_TOKEN}'
-WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
+WEBHOOK_URL = f'https://audiobookbott.herokuapp.com/{BOT_TOKEN}'
 
 # webserver settings
 WEBAPP_HOST = '0.0.0.0'
-WEBAPP_PORT = int(os.getenv('PORT'))
+WEBAPP_PORT = int(os.getenv('PORT', 5000))
 
 catalog_page_size = 3
 chapters_page_size = 6
