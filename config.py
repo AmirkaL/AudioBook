@@ -1,7 +1,7 @@
 import os 
 import sys
 
-BOT_TOKEN = os.environ.get('5330673710:AAGYvJ9YfgCS-7fBxnptlGO9fFqFRgVnHH8')
+BOT_TOKEN = '5330673710:AAGYvJ9YfgCS-7fBxnptlGO9fFqFRgVnHH8'
 HEROKU_APP_NAME = os.getenv('audiobookbott')
 
 # webhook settings
